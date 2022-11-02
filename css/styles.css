@@ -336,6 +336,34 @@ background-color: #188CE8;
   justify-content: space-between;
 }
 
+.boxes-list .item {
+  position: relative;
+}
+
+.box-label {
+  content: " ";
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.box-title {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1,14;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-hero-color);
+}
+
   /* НАША КОМАНДА */
   .team {
     background-color: var(--secondary-backgroung-color);
