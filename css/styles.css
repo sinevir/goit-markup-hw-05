@@ -273,7 +273,7 @@ img {
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
-  pointer-events: 0;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
@@ -282,13 +282,10 @@ img {
 
 .modal {
   position: absolute;
-  display: inline-flex;
-  justify-content: flex-end;
   top: 50%;
   left: 50%;
   min-width: 528px;
   min-height: 581px;
-  padding: 8px;
   background-color: var(--background-card-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -298,6 +295,9 @@ img {
 }
 
 .close-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -613,8 +613,7 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .join-icon {
